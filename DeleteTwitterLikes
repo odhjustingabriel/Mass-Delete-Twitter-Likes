@@ -1,0 +1,10 @@
+Go to: https://twitter.com/{username}/likes
+Open the console and run the following code:
+setInterval(() => {
+for (const d of document.querySelectorAll('div[data-testid="unlike"]')) {
+d.click()
+}
+window.scrollTo(0, document.body.scrollHeight)
+}, 1000)
+
+If one has a lot of likes, simply change the set timer to 10000
